@@ -1,107 +1,357 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>index</title>
-	<style>
-		.revised-link {
-			display: inline-block;
-			margin: 20px 0;
-			padding: 15px 30px;
-			background-color: #667eea;
-			color: white;
-			text-decoration: none;
-			border-radius: 5px;
-			font-weight: bold;
-			font-size: 1.1em;
-			transition: background-color 0.3s;
-		}
-		.revised-link:hover {
-			background-color: #764ba2;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Outreach for World Hope brings life-changing support to remote villages in Guatemala through child sponsorship, clean water, medical care, and sustainable programs.">
+    <title>Outreach for World Hope | Bringing Hope to Guatemala</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .tagline {
+            font-size: 1.3em;
+            font-style: italic;
+            opacity: 0.95;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 40px 0 20px 0;
+            color: #2c3e50;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            margin: 25px 0 15px 0;
+            color: #34495e;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        ul {
+            margin: 15px 0 15px 20px;
+            list-style-position: outside;
+        }
+
+        li {
+            margin-bottom: 12px;
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .section.highlight {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffc107;
+        }
+
+        .section.need {
+            background-color: #f8d7da;
+            border-left: 5px solid #dc3545;
+        }
+
+        .section.programs {
+            background-color: #d1ecf1;
+            border-left: 5px solid #17a2b8;
+        }
+
+        .section.stories {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+        }
+
+        .section.help {
+            background-color: #e7f3ff;
+            border-left: 5px solid #007bff;
+        }
+
+        .cta-box {
+            background-color: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 10px 10px 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #764ba2;
+        }
+
+        .cta-button.secondary {
+            background-color: #28a745;
+        }
+
+        .cta-button.secondary:hover {
+            background-color: #218838;
+        }
+
+        .story-quote {
+            font-style: italic;
+            padding: 20px;
+            background-color: white;
+            border-left: 4px solid #667eea;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .emphasis {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .warning {
+            font-style: italic;
+            color: #dc3545;
+            font-weight: 500;
+        }
+
+        .program-item {
+            margin-bottom: 25px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 30px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.95em;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .cta-button {
+                display: block;
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-<a href="owh_index.html" class="revised-link">📄 View Revised Page</a>
-<h1><strong>Outreach for World Hope</strong></h1>
+    <header>
+        <h1>Outreach for World Hope</h1>
+        <p class="tagline">Bringing Life and Hope to Remote Villages of Guatemala</p>
+    </header>
 
-<p><em>Bringing Life and Hope to Remote Villages of Guatemala</em></p>
+    <div class="container">
+        <div class="section highlight">
+            <h2>About Our Mission</h2>
+            <p><strong>Outreach for World Hope (OWH)</strong> is a Christian non-profit organization serving the remote mountain villages of Eastern Guatemala. For over a decade, we've partnered with local communities and churches to bring practical, life-changing support to families living in extreme poverty.</p>
+            <p><strong>Our vision:</strong> Every child deserves food, clean water, safety, and a future filled with hope.</p>
+        </div>
 
-<hr />
+        <div class="section need">
+            <h2>🌍 The Need</h2>
+            <p>In the remote mountains of Eastern Guatemala, families face daily struggles for survival:</p>
+            <ul>
+                <li>❌ Children suffer from severe malnutrition and preventable disease.</li>
+                <li>💧 Contaminated drinking water leads to parasites and life-threatening illness.</li>
+                <li>🌵 Drought and famine threaten entire communities.</li>
+                <li>🔥 Indoor open-fire cooking causes lung damage, burns, and consumes excessive resources.</li>
+            </ul>
+            <p class="warning">⚠️ Without intervention, children die from hunger and preventable sickness every year.</p>
+        </div>
 
-<h2><strong>🌍 The Need</strong></h2>
+        <div class="section programs">
+            <h2>❤️ Our Programs</h2>
+            <p>Through partnership with local communities, we provide comprehensive support:</p>
 
-<p>In the remote mountains of Eastern Guatemala, families live in <strong>extreme poverty</strong>:</p>
+            <div class="program-item">
+                <h3>💖 Child Sponsorship</h3>
+                <p>Monthly food packages, vitamins, medical care, and educational support transform lives for just <strong>$34/month per child</strong>.</p>
+            </div>
 
-<ul>
-<li><p>❌ Children suffer from malnutrition and preventable disease.</p></li>
-<li><p>🚶‍♀️ Contaminiated drinking water leads to parasites and disease.</p></li>
-<li><p>🌵 Drought and famine threaten survival.</p></li>
-</ul>
+            <div class="program-item">
+                <h3>🩺 Medical & Dental Care</h3>
+                <p>Mobile clinics bring healthcare directly to villages with no access to medical facilities.</p>
+            </div>
 
-<p>⚠️ <em>Without help, children die from hunger and sickness every year.</em></p>
+            <div class="program-item">
+                <h3>💧 Clean Water Initiative</h3>
+                <p>Each bucket water filter provides up to <strong>100,000 gallons</strong> of safe, clean drinking water for an entire family—preventing disease and saving lives.</p>
+            </div>
 
-<hr />
+            <div class="program-item">
+                <h3>🔥 Safe Stove Program</h3>
+                <p>Vented stoves replace dangerous indoor open fires, preventing <strong>lung damage</strong>, reducing <strong>burns</strong>, and keeping homes <strong>cooler</strong> while using 90% less wood.</p>
+            </div>
 
-<h2><strong>❤️ Our Response</strong></h2>
+            <div class="program-item">
+                <h3>🎒 Education Support</h3>
+                <p>Classrooms, school supplies, teacher training, and scholarships give children hope for a brighter future.</p>
+            </div>
 
-<p><strong>Outreach for World Hope (OWH)</strong> partners with local communities to bring practical, life-changing support:</p>
+            <div class="program-item">
+                <h3>🌱 Sustainable Agriculture</h3>
+                <p>Seeds, training, and farming methods help families grow their own food and build long-term stability.</p>
+            </div>
 
-<ul>
-<li><p>💖 <strong>Child Sponsorship</strong> – monthly food, vitamins, medical care, and school support.</p></li>
-<li><p>🩺 <strong>Medical &amp; Dental Care</strong> – mobile clinics in remote villages.</p></li>
-<li><p>🎒 <strong>Education</strong> – classrooms, supplies, and teacher training.</p></li>
-<li><p>💧 <strong>Clean Water</strong> – each bucket water filter provides up to <strong>100,000 gallons</strong> of safe, clean drinking water for an entire family.</p></li>
-<li><p>🔥 <strong>Safe Stoves</strong> – replace cooking over an indoor open fire with vented stoves, preventing <strong>lung damage</strong>, reducing <strong>burns</strong>, and keeping homes <strong>cooler</strong> since 90% less wood is needed.</p></li>
-<li><p>🌱 <strong>Agriculture</strong> – seeds, training, and sustainable farming methods.</p></li>
-</ul>
+            <p class="emphasis">➡️ Every gift makes a difference. Every child matters.</p>
+        </div>
 
-<p>➡️ <em>Every gift makes a difference. Every child matters.</em></p>
+        <div class="section stories">
+            <h2>📖 Stories of Hope</h2>
 
-<hr />
+            <h3>Mauricia's Transformation</h3>
+            <div class="story-quote">
+                <p>"Mauricia was eight years old when we met her. She was starving, her hair had fallen out, and her chances of survival were only 10%. Today, through child sponsorship, she is thriving, in school, and full of life."</p>
+            </div>
 
-<h2><strong>📖 A Real Story of Hope</strong></h2>
+            <h3>Darwin's Miracle</h3>
+            <div class="story-quote">
+                <p>"Little Darwin was only 3 pounds when he was born, and he had dropped to 2 pounds when we saw him. He only had a matter of days or hours left in his life at that point, but he was a fighter! Through the OWH sponsorship program, he has since grown to be a vibrant, happy, strong boy. It has been a joy to visit him during our mission trips over the years."</p>
+            </div>
+        </div>
 
-<p>“Mauricia was eight years old when we met her. She was starving, her hair had fallen out, and her chances of survival were only 10%. Today, through child sponsorship, she is thriving, in school, and full of life.”</p>
+        <div class="section help">
+            <h2>🙌 How You Can Help</h2>
 
-<p>“Little Darwin was only 3 pounds when he was born, and he had dropped to 2 pounds when we saw him. He only had a matter of days or hours left in his life at that point, but he was a fighter! Through the OWH sponsorship program, he has since grown to be a vibrant, happy, strong boy. It has been a joy to visit him during our mission trips over the years. </p>
+            <div class="cta-box">
+                <h3>1️⃣ Sponsor a Child</h3>
+                <p>Transform a life with monthly support of just <strong>$34/month</strong>. Your sponsorship provides:</p>
+                <ul>
+                    <li>Monthly food packages and vitamins</li>
+                    <li>Medical and dental care</li>
+                    <li>Educational support and school supplies</li>
+                    <li>Hope for a brighter future</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSei6Ld_95q41lMpgXjnfqjtNrKpswKMm-jZrsOCkYqnplZtOA/viewform?usp=sharing" target="_blank" class="cta-button">SPONSOR A CHILD</a>
+                <div><img src="img/Blue-OWH-Getinvolved.png" alt="QR Code for Child Sponsorship" style="max-width: 200px; margin-top: 15px;"></div>
+            </div>
 
-<hr />
+            <div class="cta-box">
+                <h3>2️⃣ Make a One-Time Gift</h3>
+                <p>Your donation provides immediate, life-saving support:</p>
+                <ul>
+                    <li><strong>$20</strong> – provides a <strong>bucket water filter</strong> for a family (100,000 gallons of safe drinking water)</li>
+                    <li><strong>$150</strong> – provides a <strong>vented stove</strong> for a family</li>
+                    <li><strong>Any amount</strong> – helps deliver food, vitamins, medical care, and critical support</li>
+                </ul>
+                <a href="https://www.outreachforworldhope.org/donate" target="_blank" class="cta-button secondary">DONATE NOW</a>
+                <div><img src="img/Green-bit.ly_owh-donate.png" alt="QR Code for Donations" style="max-width: 200px; margin-top: 15px;"></div>
+            </div>
 
-<h2><strong>🙌 How You Can Help</strong></h2>
+            <div class="cta-box">
+                <h3>3️⃣ Get Involved</h3>
+                <ul>
+                    <li>✈️ <strong>Join a Mission Team</strong> – Travel with us to serve families in Guatemala and see the impact firsthand.</li>
+                    <li>🙏 <strong>Prayer Team</strong> – Receive updates and pray for the families and communities we serve.</li>
+                    <li>📨 <strong>Stay Connected</strong> – Sign up for our newsletter to receive stories, updates, and ways to help.</li>
+                </ul>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSei6Ld_95q41lMpgXjnfqjtNrKpswKMm-jZrsOCkYqnplZtOA/viewform?usp=sharing" target="_blank" class="cta-button">LEARN MORE</a>
+                <div><img src="img/Blue-OWH-Getinvolved.png" alt="QR Code for Mission Trips and Updates" style="max-width: 200px; margin-top: 15px;"></div>
+            </div>
+        </div>
 
-<h3><strong>1️⃣ Donate</strong></h3>
+        <div class="section">
+            <h2>💙 Our Commitment to You</h2>
+            <p><strong>Outreach for World Hope</strong> is committed to transparency and faithful stewardship:</p>
+            <ul>
+                <li>501(c)(3) non-profit organization</li>
+                <li>[XX%] of donations go directly to program support</li>
+                <li>All donations are tax-deductible</li>
+                <li>Regular updates on the impact of your giving</li>
+            </ul>
+        </div>
 
-<p>Your gift provides food, medicine, and hope:</p>
+        <div class="section highlight">
+            <h2>Thank You for Making Hope Possible</h2>
+            <p>Every child deserves food, clean water, safety, and a future. Because of you, families in remote Guatemala are finding hope again.</p>
+            <p class="emphasis">👉 Your generosity brings <strong>life-saving water</strong>, <strong>safe homes</strong>, and <strong>a brighter tomorrow</strong>.</p>
+            <p><strong>Thank you for standing with Outreach for World Hope. Together, we are changing lives!</strong></p>
+        </div>
+    </div>
 
-<ul>
-<li><p><strong>$20</strong> – buys a <strong>bucket water filter</strong> for a family (100,000 gallons of safe drinking water).</p></li>
-<li><p><strong>$150</strong> – provides a <strong>vented stove</strong> for a family.</p></li>
-<li><p><strong>Any amount</strong> – helps deliver food, vitamins, and critical care.</p></li>
-</ul>
-
-<p>📲 <strong>[QR CODE – DONATE]</strong></p>
-
-<hr />
-
-<h3><strong>2️⃣ Get Involved</strong></h3>
-
-<ul>
-<li><p>👧 <strong>Sponsor a Child</strong> – Transform a life with support of just $34/month.</p></li>
-<li><p>✈️ <strong>Join a Mission Team</strong> – Travel with us to serve in Guatemala.</p></li>
-<li><p>📨 <strong>Sign Up to Learn More</strong> – Stay connected and receive updates.</p></li>
-</ul>
-
-<p>📲 <strong>[QR CODE – SPONSORSHIP / MISSION TRIP INFO]</strong></p>
-
-<hr />
-
-<h2><strong>💙 Thank You for Making Hope Possible</strong></h2>
-
-<p>Every child deserves food, clean water, safety, and a future. Because of you, families in remote Guatemala are finding hope again.</p>
-
-<p>👉 Your generosity brings <strong>life-saving water</strong>, <strong>safe homes</strong>, and <strong>a brighter tomorrow</strong>.</p>
-
-<p><strong>Thank you for standing with Outreach for World Hope. Together, we are changing lives!</strong></p>
+    <footer>
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+            <p>[Address] | [Phone] | [Email]</p>
+            <p>[Website URL] | [Social Media Links]</p>
+            <p><em>Tax ID: [EIN Number]</em></p>
+        </div>
+        <p style="margin-top: 30px; opacity: 0.8;">&copy; 2025 Outreach for World Hope. All rights reserved.</p>
+    </footer>
 </body>
 </html>
