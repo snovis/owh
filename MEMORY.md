@@ -26,14 +26,15 @@ This is a static website for Chris Roth's missionary work with Outreach for Worl
 3. **Bible Verse** (1 John 3:17-18) - Sets compassionate tone
 4. **The Need** - Describes challenges in Guatemala
 5. **Bible Verse** (Matthew 25:40) - Service to the vulnerable
-6. **Our Programs** - Six key programs (Child Sponsorship, Medical Care, Clean Water, Safe Stoves, Education, Agriculture)
+6. **Our Programs** - Six key programs (Child Sponsorship, Medical Care, Clean Water, Safe Stoves, Education, Agriculture) with program photos
 7. **Bible Verse** (Galatians 6:9) - Perseverance in doing good
-8. **Stories of Hope** - Testimonials (Mauricia, Darwin)
-9. **How You Can Help** - Three CTAs with buttons and QR codes
-10. **Our Commitment to You** - Transparency section (91% to programs)
-11. **Bible Verse** (Proverbs 22:9) - Blessings of generosity
-12. **Thank You** - Closing gratitude
-13. **Footer** - Copyright only
+8. **The Lasting Impact** - NEW SECTION describing village gatherings and ripple effects of programs (with village photo)
+9. **Stories of Hope** - Testimonials (Mauricia, Darwin)
+10. **How You Can Help** - Three CTAs with buttons and QR codes
+11. **Our Commitment to You** - Transparency section (91% to programs)
+12. **Bible Verse** (Proverbs 22:9) - Blessings of generosity
+13. **Thank You** - Closing gratitude
+14. **Footer** - Copyright only
 
 ### Important Links & Resources
 - **Google Form** (Sponsorship/Get Involved): https://docs.google.com/forms/d/e/1FAIpQLSei6Ld_95q41lMpgXjnfqjtNrKpswKMm-jZrsOCkYqnplZtOA/viewform?usp=sharing
@@ -49,6 +50,13 @@ This is a static website for Chris Roth's missionary work with Outreach for Worl
 - `img/OWH logo.avif` - Organization logo (200px max-width, in header)
 - `img/Blue-OWH-Getinvolved.png` - QR code for sponsorship and mission trips
 - `img/Green-bit.ly_owh-donate.png` - QR code for donations
+- `img/OWH-Sponsor-Child.jpeg` - Child sponsorship program photo (in Child Sponsorship section)
+- `img/OWH-Bucket-Mountain-Boy.jpeg` - Bucket water filter program photo (in Clean Water Initiative section)
+- `img/OWH-Stove-Family.jpeg` - Safe stove program photo (in Safe Stove Program section)
+- `img/OWH-Village.jpeg` - Village gathering photo (in Lasting Impact section)
+- `img/OWH-Bucket-Blue-Boy.jpeg` - Additional water filter photo (not currently used)
+- `img/OWH-Bucket-Family.jpeg` - Additional water filter photo (not currently used)
+- `img/OWH-Stove-Alt.jpeg` - Alternative stove photo (not currently used)
 
 ### Design Elements
 - **Color Scheme**: Purple gradient header (#667eea to #764ba2), color-coded sections
@@ -59,6 +67,7 @@ This is a static website for Chris Roth's missionary work with Outreach for Worl
   - Story quotes: White boxes with purple left border
   - Sections: Color-coded backgrounds (yellow/highlight, red/need, blue/programs, green/stories, light blue/help)
   - CTA boxes: White with shadow, prominent buttons
+  - Program images: Centered, max 500px wide × 400px tall, rounded corners (8px), drop shadow, crop from top center
 
 ### Key Statistics
 - **Donation Efficiency**: 91% of donations go directly to program support
@@ -80,6 +89,12 @@ This is a static website for Chris Roth's missionary work with Outreach for Worl
 - Added QR codes for easy mobile access
 - Integrated logo and Bible verses for spiritual emphasis
 - Replaced original index.html with improved version
+- **2025-10-05**: Added program photos to website
+  - Added OWH-Sponsor-Child.jpeg to Child Sponsorship section
+  - Added OWH-Bucket-Mountain-Boy.jpeg to Clean Water Initiative section
+  - Added OWH-Stove-Family.jpeg to Safe Stove Program section
+  - Created new "Lasting Impact" section with OWH-Village.jpeg showing community gatherings
+  - Styled images with centered alignment, uniform sizing, rounded corners, and drop shadows
 
 ### Technical Notes
 - Uses AVIF format for logo (modern, efficient)
