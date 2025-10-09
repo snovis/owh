@@ -232,6 +232,54 @@
             display: block;
         }
 
+        .before-after-container {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .before-after-image {
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .before-after-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .before-after-image .label {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .before-after-image .label.before {
+            color: #dc3545;
+        }
+
+        .before-after-image .label.after {
+            color: #28a745;
+        }
+
+        @media (max-width: 768px) {
+            .before-after-container {
+                flex-direction: column;
+            }
+
+            .before-after-image {
+                max-width: 100%;
+            }
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2em;
@@ -345,6 +393,29 @@
 
         <div class="section stories">
             <h2>📖 Stories of Hope</h2>
+
+            <h3>Miguel: A Life Saved</h3>
+            <div class="story-quote">
+                <p>Miguel was found in a state of severe malnutrition and was enrolled without a sponsor so that his life could be saved. His challenges are numerous as his mother died two years ago and, during his hospital stay for nutritional rehabilitation, he was found to be HIV positive. His father and siblings were subsequently tested and his father was also found to be HIV positive.</p>
+                <p>OWH social workers are providing weekly transportation to Guatemala City where the two are receiving antiretroviral medications which will prolong their lives. <strong>Miguel, after only one and a half months in the OWH sponsorship program, is gaining weight and able to walk on his own.</strong> His siblings are also receiving food, vitamins, and medical care from the ministry and will be cared for in the event that the father is no longer able to care for them.</p>
+            </div>
+
+            <div class="before-after-container">
+                <div class="before-after-image">
+                    <img src="img/miguel_before.avif" alt="Miguel before receiving care - severely malnourished">
+                    <div class="label before">Before</div>
+                    <p style="font-size: 0.9em; color: #666;">Severe malnutrition, unable to walk</p>
+                </div>
+                <div class="before-after-image">
+                    <img src="img/miguel_after.avif" alt="Miguel after 6 weeks in OWH program - healthy and smiling">
+                    <div class="label after">After 6 Weeks</div>
+                    <p style="font-size: 0.9em; color: #666;">Gaining weight, walking, full of life</p>
+                </div>
+            </div>
+
+            <p class="emphasis" style="text-align: center; margin-top: 20px;">💚 This is why we protect the little ones. This is why your support matters.</p>
+
+            <hr>
 
             <h3>Mauricia's Transformation</h3>
             <div class="story-quote">
